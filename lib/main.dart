@@ -48,9 +48,12 @@ class _Center extends StatelessWidget {
               child: Column(
             children: [
               ButtonBar(
+                buttonPadding:
+                    const EdgeInsets.symmetric(horizontal: 100, vertical: 10),
                 alignment: MainAxisAlignment.center,
                 children: [
                   MaterialButton(
+                    color: Colors.blueGrey,
                     onPressed: () {
                       log("libros");
                       provider.libros();
@@ -58,12 +61,14 @@ class _Center extends StatelessWidget {
                     child: const Text("Libros"),
                   ),
                   MaterialButton(
+                    color: Colors.blueGrey,
                     onPressed: () {
                       provider.musica();
                     },
                     child: const Text("Musica"),
                   ),
                   MaterialButton(
+                    color: Colors.blueGrey,
                     onPressed: () {
                       provider.peliculas();
                     },
